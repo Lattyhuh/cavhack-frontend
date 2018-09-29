@@ -26,7 +26,7 @@ $ npm install
 ``` sh
 $ npm start
 ```
-5. Navigate to http://localhost:3000
+5. Navigate to http://localhost:3001
 
 When you first start your local development server, the page should be blank. But don't worry, we will fix that!
 
