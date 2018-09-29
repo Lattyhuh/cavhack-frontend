@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
 import { withRouter } from 'react-router'
-import { Grid, Row, Col, Image, PageHeader, Panel, Button } from 'react-bootstrap'
-import { AddModal } from '../components/Modal/Modal'
+import { Grid, Row, Col, Image, PageHeader, Panel, Navbar } from 'react-bootstrap'
+import '../style.css'
 
-import { getUserProfile } from '../actions/api'
+
 
 class MyProfileContainer extends Component {
   constructor(props) {
@@ -41,14 +41,18 @@ class MyProfileContainer extends Component {
   render() {
     return (
       <div>
-        <Grid>
+        <Grid className="grid">
           <Row className="show-grid valign-wrapper">
             <Col xs={12} md={8} lg={4}>
               {/* ADD PROFILE IMAGE HERE */}
+              <Image src ="/assets/images/dog-placeholder.jpg" thumbnail />
             </Col>
             <Col xs={12} md={4} lg={8}>
               {/* ADD PAGE HEADER WITH NAME AND ABOUT ME HEADINGS HERE */}
-
+<PageHeader className="title">Daniel Lee
+  <br />
+  <small>About Me</small>
+</PageHeader>
               {/* ADD ABOUT ME DESCRIPTION HERE */}
 
             </Col>
@@ -59,7 +63,19 @@ class MyProfileContainer extends Component {
             <Col xs={12}>
 
               {/* ADD HEADER FOR SECTION HERE */}
+<PageHeader>
+My interest
+</PageHeader>
 
+  <Panel className="Paragraph">
+    <Panel.Body>
+      <ul>
+        <li>Watching T.v</li>
+        <li>Going outside</li>
+        <li>I like food</li>
+      </ul>
+    </Panel.Body>
+  </Panel>
               {/* ADD PANEL FOR SECTION INFORMATION WITH LIST HERE */}
 
               {/* ADD BUTTON FOR ADDITIONAL INFORMATION HERE */}

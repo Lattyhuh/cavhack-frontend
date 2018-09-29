@@ -1,5 +1,5 @@
 import React from 'react'
-import { Modal, Button, FormGroup, FormControl, ControlLabel } from 'react-bootstrap'
+import { Modal } from 'react-bootstrap'
 
 export const AddModal = props => (
   <Modal show={props.showModal} onHide={props.handleModalClose}>
